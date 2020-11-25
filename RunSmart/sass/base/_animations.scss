@@ -1,0 +1,25 @@
+@keyframes heartbeat {
+    from { // from можно заменить на 0%, а to на 100%, все изменения в промежутке также устанавлюваюься %
+        transform: scale(1); // масштаб 1=100%
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.heart_animated {
+    // animation: heartbeat 1.5s ease infinite; можно все записать в одно свойство
+    animation-name: heartbeat; // имя анимации из _animations
+    animation-duration: 1.5s; // продолжительность 1го цикла
+    animation-timing-function: ease;// развитие анимации
+    animation-iteration-count: infinite; // кол-во ращ проигрывания цикла/бесконечно
+    &:hover { // при наведении
+        animation-play-state: paused; // остановка анимации
+    }
+}
+.animate__bounce {
+    animation-duration: 2s;
+}
