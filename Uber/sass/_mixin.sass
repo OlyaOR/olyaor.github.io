@@ -1,0 +1,71 @@
+@mixin black_box
+    width: 112px
+    height: 24px
+    background-color: #000000
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 11px
+    font-weight: 100
+    text-transform: uppercase
+    color: #ffffff
+@mixin black_title
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+    color: #222222
+    margin-top: 38px
+    line-height: 33px
+    text-align: center
+@mixin black_subtitle
+    font-size: 17px
+    line-height: 21px
+    font-weight: 400
+    color: #222222
+    text-align: center
+    margin-top: 19px
+@mixin light_box
+    width: 112px
+    height: 24px
+    background-color: #ffffff
+    font-size: 11px
+    font-weight: 100
+    text-transform: uppercase
+    color: #070716
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+@mixin light_title
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+    color: #ffffff
+    text-align: center
+    margin-top: 32px
+@mixin light_subtitle
+    font-size: 17px
+    font-weight: 400
+    color: #ffffff
+    text-align: center
+    margin-top: 19px
+@mixin btn
+    &:hover
+        background-image: none
+        background-color: $main-color
+@mixin link ($mt, $bg, $w)
+    &:after
+        content: ''
+        display: block
+        height: 1px
+        background-color: $bg
+        margin-top: $mt
+        width: 0%
+        transition: 0.3s
+        @content
+    &:hover
+        color: $bg
+        text-decoration: none
+        &:after
+            width: $w

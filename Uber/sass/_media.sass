@@ -1,0 +1,250 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .main_info
+        h1 
+            font-size: 50px
+    .eight_reasons_item
+        align-items: flex-start
+        .round
+            margin-left: 10px
+    .mobile_item
+        width: 299px
+    .first_part
+        .row
+            .social
+                margin-top: 45px
+            .app
+                margin-top: 45px
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 5px
+        &_link
+            font-size: 11px
+    .main
+        &_logo
+            &_link
+                img
+                    width: 100%
+            &_text
+                font-size: 12px
+        &_phone
+            font-size: 20px
+        &_btn
+            width: 100%
+            height: 45px
+            font-size: 12px
+            margin-top: 19px
+        &_info
+            h1 
+                font-size: 40px
+            h2 
+                font-size: 30px
+            &_btn
+                margin-top: 75px
+                width: 200px
+                height: 50px
+                font-size: 15px
+    .eight_reasons_item
+        flex-direction: column
+        align-items: center
+        margin: 0
+        &:first-child
+            margin-top: 35px
+        .eight_reasons_text
+            width: 100%
+            margin: 13px
+        .round 
+            margin: 13px
+    .mobile
+        height: 740px
+        &_item
+            width: 210px
+            height: 206px
+            padding: 40px 7px
+            &_subtitle
+                font-size: 17px
+                line-height: 17px    
+    .reasons_title, .mobile_title, .request_title
+        font-size: 30px
+    .car_title, .world_title
+        font-size: 30px
+    .car_img
+        width: 100%
+    .car_second_part
+        height: 270px
+        padding-bottom: 80px
+    .request
+        padding-bottom: 42px
+        .row
+            flex-direction: column
+            align-items: center
+        .blue
+            margin: 16px 0px
+            &:first-child
+                margin-top: 33px
+        .red
+            margin: 16px 0px
+@media (max-width: 767px)              
+    .menu
+        position: fixed
+        flex-direction: column
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        justify-content: center
+        align-items: center
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+            width: 100%
+            text-align: center
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 15px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+        &_active
+            span
+                margin-bottom: -3px
+                &:nth-child(1)
+                    transform: translateY(5px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(5px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .main_btn
+        margin: 0
+        height: 50%
+        width: 70%
+        display: block
+        margin: 0 auto
+    .xs-visible
+        display: block
+        font-size: 15px
+        text-align: center
+        margin-top: 15px
+    .main
+        &_info
+            h1 
+                line-height: 45px
+    .mobile
+        height: 960px
+    .first_part
+        min-height: 200px
+        .row
+            .social
+                margin-top: 70px
+                margin-left: 35px
+            .app
+                margin-top: 73px
+                margin-right: 35px
+    .car_first_part
+        height: 445px
+@media (max-width: 575px)
+    .menu_link
+        font-size: 15px
+    .car_first_part
+        height: 425px
+    .first_part
+        min-height: 220px
+        .row
+            .social
+                margin-top: 70px
+                margin-left: 0
+            .app
+                margin-top: 110px
+                right: 0
+                left: 23px
+    .mobile
+        height: 1650px
+        .row
+            flex-direction: column
+            align-items: center
+            .col-6
+                padding: 0
+@media (max-width: 424px)
+    .menu
+        &_link
+            line-height: 20px
+            @include link (0px, #ffff, 100%)
+    .main
+        height: 65px
+        &_phone
+            margin-top: 9px
+            font-size: 12px
+        &_btn
+            height: 27px
+        &_info
+            min-height: 400px
+            padding: 160px 0 35px 0
+            h1 
+                font-size: 20px
+                line-height: 20px
+            h2 
+                font-size: 15px
+            &_text
+                display: none
+        &_logo
+            &_text
+                display: none
+            &_link
+                img
+                    width: 150px
+                    margin-top: 5px
+    .mobile
+        height: 1660px
+        .row
+            display: block
+            margin: 0
+            margin-top: 32px
+            margin-left: 40px
+    .car_first_part
+        height: 395px
+    .first_part
+        min-height: 450px
+        .blue_line
+            width: 100px
+        .row
+            .social
+                margin-left: 65px
+                margin-top: 300px
+            .app
+                margin-top: 350px
+                width: 320px
+                left: 21px
+        .container
+            .row
+                width: 290px
+                display: flex
+                flex-direction: column
+                align-items: center
+    .reasons_title, .mobile_title, .request_title
+        font-size: 25px
+    .car_title, .world_title
+        font-size: 25px
+                
